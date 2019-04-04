@@ -1,0 +1,16 @@
+language: node.js
+node_js:
+  - "stable"
+dist: trusty
+sudo: required
+
+branches:
+  only:
+    - master
+
+before_script:
+  - npm i -g @angular/cli
+
+script
+- ng lint
+- ng build --prod --base-href https://marynaageeva.github.io/CI-test/.
