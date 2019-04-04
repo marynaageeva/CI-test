@@ -11,7 +11,7 @@ branches:
 before_script:
   - npm i -g @angular/cli
 
-script
+script:
 - ng lint
 - npm run test-headless
 - ng build --prod --base-href https://marynaageeva.github.io/CI-test/
